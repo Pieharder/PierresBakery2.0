@@ -1,4 +1,4 @@
-# _Travel Diary_
+# _Pierre's Bakery 2.0_
 
 #### _Epicodus 2020 C#/React Cohort ASP.NET Core MVC Friday Project._
 
