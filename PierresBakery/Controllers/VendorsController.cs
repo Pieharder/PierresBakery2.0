@@ -42,10 +42,10 @@ namespace PierresBakery.Controllers
     public ActionResult Create(int vendorId, string orderDescription)
     {
       Dictionary<string, object> model = new Dictionary<string, object>();
-      Category foundVendor = Vendor.Find(vendorId);
+      Vendor foundVendor = Vendor.Find(vendorId);
       Order newOrder = new Order(orderDescription);
       foundVendor.AddItem(newOrder);
-      List<Order> categoryOrders = foundVendor.Orders;
+      List<Order> vendorOrders = foundVendor.Orders;
       model.Add("orders", vendorOrders);
       model.Add("vendor", foundVendor);
       return View("Show", model);
