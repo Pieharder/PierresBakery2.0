@@ -4,16 +4,16 @@ using System.Collections.Generic;
 
 namespace PierresBakery.Controllers
 {
-  public class OrdersController : Controller
+  public class OrderController : Controller
   {
-    [HttpGet("/vendor/{vendorId}/orders/new")]
+    [HttpGet("/vendor/{vendorId}/order/new")]
     public ActionResult New(int vendorId)
     {
       Vendor vendor = Vendor.Find(vendorId);
       return View(vendor);
     }
 
-    [HttpGet("/vendor/{vendorId}/orders/{orderId}")]
+    [HttpGet("/vendor/{vendorId}/order/{orderId}")]
     public ActionResult Show(int vendorId, int orderId)
     {
       Order order = Order.Find(orderId);
