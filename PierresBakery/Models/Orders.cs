@@ -16,7 +16,7 @@ namespace PierresBakery.Models
       Description = description;
       Bread = bread;
       Pastry = pastry;
-      Price = Price;
+      Price = price;
 
       _instances.Add(this);
       Id = _instances.Count;
