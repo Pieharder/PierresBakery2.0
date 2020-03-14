@@ -2,16 +2,12 @@
 
 <form action="/vendor/@Model.Id/order" method="post">
   <input id="categoryId" name="categoryId" type="hidden" value="@Model.Id">
-  
   <label for="orderDescription">Order description:</label>
   <input id="orderDescription" name="orderDescription" placeholder="Event Description" type="text">
-  
   <label for="orderBread">Total Loaves of Bread:</label>
   <input id="orderBread" name="orderBread" placeholder="Enter #" type="text">
-  
   <label for="orderPastry">Total Number of Pastries:</label>
   <input id="orderPastry" name="orderPastry" placeholder="Enter #" type="text">
-  
   <label for="orderPrice">Total Price Charged:</label>
   <input id="orderPrice" name="orderPrice" placeholder="00.00 Format" type="text">
   <button type='submit'>Add order</button>
